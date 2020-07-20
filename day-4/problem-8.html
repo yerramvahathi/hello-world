@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>day4-problem1</title>
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<p>open console to see output </p>
+<script>
+let ask=(question,yes,no)=>{
+if(confirm(question)){
+    yes();
+    }
+else{
+  no();
+   }
+}
+let call=ask("Do you agree?",()=>alert("you agreed:"),()=>alert("you cancelled the execution."))
+</script>
+</body>
+</html>
